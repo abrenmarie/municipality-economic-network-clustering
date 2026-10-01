@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+seaborn
+networkx
+pyarrow
+jupyter
+plotly
+s-dbw

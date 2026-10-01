@@ -1,0 +1,6 @@
+metric,value
+final_silhouette,0.34893142931275045
+final_calinski_harabasz,38856.07332914181
+seed_ari_mean,1.0
+seed_ari_min,1.0
+seed_ari_max,1.0
