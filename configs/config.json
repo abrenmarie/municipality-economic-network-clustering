@@ -1,0 +1,49 @@
+{
+  "project": "municipality-economic-network-clustering",
+  "period": {
+    "start": "2023-01",
+    "end": "2024-12",
+    "months": 24
+  },
+  "features": [
+    "food_share",
+    "health_share",
+    "marketplaces_share",
+    "catering_share",
+    "transport_share"
+  ],
+  "network": {
+    "distance": "euclidean",
+    "neighbors": 10,
+    "edge_weight": "rbf",
+    "weight_formula": "exp(-distance / sigma)",
+    "sigma": "median neighbor distance per month",
+    "graph": "undirected weighted kNN"
+  },
+  "clustering": {
+    "algorithm": "Louvain",
+    "resolution": 1.25,
+    "seed": 42
+  },
+  "persistent_types": {
+    "algorithm": "KMeans",
+    "k": 3,
+    "n_init": 50,
+    "weights": "cluster size"
+  },
+  "evaluation": {
+    "attribute_metrics": [
+      "Silhouette",
+      "Calinski-Harabasz",
+      "S_Dbw"
+    ],
+    "network_metrics": [
+      "modularity",
+      "AVI",
+      "AVU",
+      "ANUI",
+      "MQ"
+    ],
+    "stability": "pairwise ARI across 5 seeds"
+  }
+}
