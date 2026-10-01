@@ -1,0 +1,15 @@
+metric,value
+resolution,1.25
+k_neighbors,10.0
+seed,42.0
+n_types,3.0
+n_observations,50521.0
+n_months,24.0
+silhouette,0.34562278299728405
+calinski_harabasz,38527.26263934193
+ARI_vs_resolution_1_50,0.8723121358174036
+comparison_coverage,1.0
+exact_match_rate_vs_resolution_1_50,0.9584925080659528
+mean_monthly_modularity,0.804766806700394
+min_monthly_clusters,17.0
+max_monthly_clusters,20.0
