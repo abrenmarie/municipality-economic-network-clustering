@@ -38,12 +38,13 @@
       "S_Dbw"
     ],
     "network_metrics": [
-      "modularity",
-      "AVI",
-      "AVU",
-      "ANUI",
-      "MQ"
+    "modularity",
+    "AVI",
+    "AVU",
+    "MQ"
     ],
-    "stability": "pairwise ARI across 5 seeds"
+    "extra_metrics": [
+    "ANUI"
+    ]
   }
 }
