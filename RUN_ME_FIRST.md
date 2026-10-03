@@ -24,15 +24,31 @@ pip install -r requirements.txt
 
 ## 3. Данные
 
-Положите исходные файлы в `data/raw/` и подготовленные файлы в `data/processed/` согласно структуре проекта.
+Данные и подготовленные модельные файлы включены в репозиторий.
+После клонирования проекта проверьте наличие файлов в:
 
-Финальные ноутбуки ожидают, в частности:
+- `data/raw/`
+- `data/processed/`
+
+Отдельно загружать данные в обычном сценарии запуска не требуется.
+
+Финальная версия использует следующие подготовленные файлы:
 
 - `features_basic.parquet`
 - `features_2024_12.parquet`
 - `edges_2024_12.parquet`
 - `edges_all_months.parquet`
-- `municipality_economic_types.parquet`
+
+Финальные результаты сохраняются в `data/processed/`, включая:
+
+- `municipality_economic_types_final.parquet`
+- `economic_type_profiles_final_125.csv`
+- `economic_type_sizes_final_125.csv`
+- `economic_type_transitions_final_125.csv`
+- `final_model_evaluation.csv`
+- `method_comparison_full.csv`
+- `icvi_results_dec2024.csv`
+- `louvain_stability_dec2024.csv`
 
 ## 4. Финальный прогон
 
